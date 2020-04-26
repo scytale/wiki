@@ -47,7 +47,7 @@ CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE." />
 <link id="faviconLink" rel="shortcut icon" href="favicon.ico">
-<title>My TiddlyWiki — a non-linear personal web notebook</title>
+<title>wiki — Week 17 Saturday 2020-04-25 April</title>
 <!--~~ This is a Tiddlywiki file. The points of interest in the file are marked with this pattern ~~-->
 
 <!--~~ Raw markup ~~-->
@@ -141,7 +141,13 @@ Error message and password prompt
 
 <p>This <a class="tc-tiddlylink-external" href="https://tiddlywiki.com" rel="noopener noreferrer" target="_blank">TiddlyWiki</a> contains the following tiddlers:</p><p><ul>
 
+<li>$:/config/NewJournal/Title</li>
+
 <li>$:/core</li>
+
+<li>$:/core/ui/EditorToolbar/Time</li>
+
+<li>$:/Import</li>
 
 <li>$:/isEncrypted</li>
 
@@ -149,13 +155,21 @@ Error message and password prompt
 
 <li>$:/plugins/tiddlywiki/menubar</li>
 
+<li>$:/SiteSubtitle</li>
+
+<li>$:/SiteTitle</li>
+
 <li>$:/state/add-plugin-info/$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.22/index.html/$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.22/index.html/$:/plugins/tiddlywiki/dynaview</li>
 
 <li>$:/state/add-plugin-info/$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.22/index.html/$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.22/index.html/$:/plugins/tiddlywiki/tw5.com-docs</li>
 
 <li>$:/state/tab-1749438307</li>
 
+<li>$:/state/tab/sidebar--595412856</li>
+
 <li>$:/status/RequireReloadDueToPluginChange</li>
+
+<li>$:/status/UserName</li>
 
 <li>$:/StoryList</li>
 
@@ -359,11 +373,15 @@ Error message and password prompt
 
 <li>$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.22/index.html/$:/themes/tiddlywiki/vanilla</li>
 
+<li>$:/temp/search</li>
+
 <li>$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.22/index.html</li>
 
 <li>$:/themes/tiddlywiki/snowwhite</li>
 
 <li>$:/themes/tiddlywiki/vanilla</li>
+
+<li>Today</li>
 
 </ul>
 </p>
@@ -379,6 +397,9 @@ Error message and password prompt
 <!--~~ Ordinary tiddlers ~~-->
 
 <div id="storeArea" style="display:none;">
+<div created="20200426032715634" modified="20200426032715634" title="$:/config/NewJournal/Title">
+<pre>YYYY-0MM-0DD</pre>
+</div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="" description="TiddlyWiki5 core" list="readme" name="Core" plugin-priority="0" plugin-type="plugin" title="$:/core" type="application/json" version="5.1.22">
 <pre>{
     &quot;tiddlers&quot;: {
@@ -9752,6 +9773,18 @@ Error message and password prompt
     }
 }</pre>
 </div>
+<div caption="CurrentTime" condition="[&lt;targetTiddler&gt;!has[type]] [&lt;targetTiddler&gt;type[text/vnd.tiddlywiki]]" created="20161118171456554" description="Insert Current Time" icon="$:/core/images/tip" modified="20161118180138520" shortcuts="" tags="$:/tags/EditorToolbar" title="$:/core/ui/EditorToolbar/Time">
+<pre>&lt;$action-sendmessage
+	$message=&quot;tm-edit-text-operation&quot;
+	$param=&quot;replace-selection&quot;
+	text=&lt;&lt;now 'YYYY-0MM-0DDT0hh:0mm:0ssTZD'&gt;&gt;
+/&gt;</pre>
+</div>
+<div status="complete" title="$:/Import">
+<pre>The following tiddlers were imported:
+
+# [[$:/core/ui/EditorToolbar/Time]]</pre>
+</div>
 <div title="$:/isEncrypted">
 <pre>no</pre>
 </div>
@@ -9923,19 +9956,31 @@ Error message and password prompt
     }
 }</pre>
 </div>
+<div created="20200426032736364" modified="20200426032736364" title="$:/SiteSubtitle">
+<pre>{{Today}}</pre>
+</div>
+<div created="20200426032744553" modified="20200426032744553" title="$:/SiteTitle">
+<pre>wiki</pre>
+</div>
 <div created="20200426031350346" modified="20200426031350346" title="$:/state/add-plugin-info/$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.22/index.html/$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.22/index.html/$:/plugins/tiddlywiki/dynaview">
 <pre>yes</pre>
 </div>
 <div created="20200426031439087" modified="20200426031439087" title="$:/state/add-plugin-info/$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.22/index.html/$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.22/index.html/$:/plugins/tiddlywiki/tw5.com-docs">
 <pre>yes</pre>
 </div>
-<div created="20200426031332049" modified="20200426031332049" title="$:/state/tab-1749438307">
-<pre>$:/core/ui/ControlPanel/Plugins</pre>
+<div created="20200426031332049" modified="20200426032649190" title="$:/state/tab-1749438307">
+<pre>$:/core/ui/ControlPanel/Info</pre>
+</div>
+<div created="20200426033046821" creator="scytale" modified="20200426033206511" modifier="scytale" title="$:/state/tab/sidebar--595412856">
+<pre>$:/core/ui/SideBar/Open</pre>
 </div>
 <div title="$:/status/RequireReloadDueToPluginChange">
-<pre>yes</pre>
+<pre>no</pre>
 </div>
-<div created="20200426031325643" list="$:/ControlPanel GettingStarted" modified="20200426031325643" title="$:/StoryList">
+<div created="20200426033157033" creator="s" modified="20200426033158352" modifier="scytal" title="$:/status/UserName">
+<pre>scytale</pre>
+</div>
+<div created="20200426032644303" list="$:/ControlPanel GettingStarted" modified="20200426033048516" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -10943,6 +10988,9 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 <div author="JeremyRuston" core-version="&gt;=5.0.0" created="20200426031336997" dependents="" description="Basic theme" modified="20200426031336997" name="Vanilla" original-plugin-type="theme" original-tags="" original-title="$:/themes/tiddlywiki/vanilla" original-type="application/json" plugin-priority="0" requires-reload="no" server-url="https://tiddlywiki.com/library/v5.1.22/index.html" tags="$:/tags/RemoteAssetInfo" title="$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.22/index.html/$:/themes/tiddlywiki/vanilla" type="text/vnd.tiddlywiki" version="5.1.22">
 <pre></pre>
 </div>
+<div created="20200426033318979" creator="scytale" modified="20200426033325111" modifier="scytale" title="$:/temp/search">
+<pre></pre>
+</div>
 <div created="20200426031336900" modified="20200426031336900" tags="$:/tags/ServerConnection" title="$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.22/index.html" url="https://tiddlywiki.com/library/v5.1.22/index.html">
 <pre>loaded</pre>
 </div>
@@ -11054,6 +11102,9 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
         }
     }
 }</pre>
+</div>
+<div created="20170615234622856" modified="20180803175206254" title="Today">
+<pre>&lt;&lt;now &quot;Week WW DDD YYYY-0MM-0DD MMM&quot;&gt;&gt;</pre>
 </div>
 
 
